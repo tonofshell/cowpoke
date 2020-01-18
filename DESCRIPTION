@@ -1,0 +1,16 @@
+Package: cowpoke
+Type: Package
+Title: Functions For Simplified Data Wrangling
+Version: 0.1.0
+Authors@R: person("Adam", "Shelton", email = "aqs@uchicago.edu",
+                  role = c("aut", "cre"))
+Maintainer: Adam Shelton <aqs@uchicago.edu>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: 
+  tidyverse,
+  parallel
+RoxygenNote: 7.0.2
