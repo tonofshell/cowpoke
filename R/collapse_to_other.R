@@ -1,6 +1,6 @@
 #' Collapse to Other
 #'
-#' Collpases a vector into the n-1 most frequent categories with all other categories becoming "other"
+#' Collapases a vector into the n-1 most frequent categories with all other categories becoming "other"
 #'
 #' @param vect a vector
 #' @param n_categories the total number of categories the returned vector will have

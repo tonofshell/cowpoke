@@ -17,5 +17,5 @@ collapse_to_other(vect, n_categories, keep_numeric = TRUE)
 A vector
 }
 \description{
-Collpases a vector into the n-1 most frequent categories with all other categories becoming "other"
+Collapases a vector into the n-1 most frequent categories with all other categories becoming "other"
 }
