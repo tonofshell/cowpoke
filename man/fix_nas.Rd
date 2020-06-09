@@ -4,12 +4,14 @@
 \alias{fix_nas}
 \title{Recode Value(s) as Missing}
 \usage{
-fix_nas(vect, na_strs)
+fix_nas(vect, na_strs, ignore_case = FALSE)
 }
 \arguments{
 \item{vect}{a vector}
 
 \item{na_strs}{a character vector of values you want to code as NA}
+
+\item{ignore_case}{a logical vector indicating whether case should be ignored when matching values to replace with NA}
 }
 \value{
 A vector
