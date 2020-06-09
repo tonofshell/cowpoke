@@ -7,8 +7,8 @@
 regression_table(
   reg_obj,
   table_caption = NULL,
-  fancy = FALSE,
-  doc_format = "default"
+  output = c("raw", "plain", "fancy"),
+  fancy = FALSE
 )
 }
 \arguments{
@@ -16,12 +16,12 @@ regression_table(
 
 \item{table_caption}{A caption to replace the default}
 
-\item{fancy}{Use kableExtra formatting to add colors for coeffiecents and p-values. Default value is `FALSE`.}
+\item{output}{Output format, either "raw", "plain", or "fancy". Defaults to "plain"}
 
-\item{doc_format}{Output format for R Markdown, refer to kableExtra format for more info, matches `knitr.table.format` by default}
+\item{fancy}{Deprecated - use `output`}
 }
 \value{
-A kable object
+A kable object for `output = "plain", "fancy"`, A tibble for `output = "raw"`
 }
 \description{
 Creates a formatted table listing variables in a regression type model, with their estimated coefficients and statistics
