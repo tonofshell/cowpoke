@@ -32,6 +32,6 @@ regression_table = function(reg_obj, table_caption = NULL, output = c("raw", "pl
     "fancy" = res_tib %>%
       mutate_if(is.numeric, round, digits = 3) %>%
       mutate_at(vars(starts_with("Pr(")), sig_cell_spec) %>%
-      mutate(Estimate = cell_spec(Estimate, doc_format, background = ifelse(Estimate < 0, "#40e0d0", "#ff6347"), color = pos_neg_format(Estimate), bold = TRUE)) %>% kable(escape = F, caption = table_caption) %>% fancy_table %>% kable_styling(bootstrap_options = "striped", latex_options = "striped", full_width = F)
+      mutate(Estimate = cell_spec(Estimate, background = ifelse(Estimate < 0, "#40e0d0", "#ff6347"), color = pos_neg_format(Estimate), bold = TRUE)) %>% kable(escape = F, caption = table_caption) %>% kable_styling(bootstrap_options = "striped", latex_options = "striped", full_width = F)
   )
 }
